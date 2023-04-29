@@ -1,0 +1,16 @@
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\bin\Debug\net5.0\AgileTask.exe
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\bin\Debug\net5.0\AgileTask.deps.json
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\bin\Debug\net5.0\AgileTask.runtimeconfig.json
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\bin\Debug\net5.0\AgileTask.runtimeconfig.dev.json
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\bin\Debug\net5.0\AgileTask.dll
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\bin\Debug\net5.0\ref\AgileTask.dll
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\bin\Debug\net5.0\AgileTask.pdb
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\obj\Debug\net5.0\AgileTask.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\obj\Debug\net5.0\AgileTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\obj\Debug\net5.0\AgileTask.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\obj\Debug\net5.0\AgileTask.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\obj\Debug\net5.0\AgileTask.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\obj\Debug\net5.0\AgileTask.dll
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\obj\Debug\net5.0\ref\AgileTask.dll
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\obj\Debug\net5.0\AgileTask.pdb
+C:\Users\LENOVO\source\repos\AgileTask\AgileTask\obj\Debug\net5.0\AgileTask.genruntimeconfig.cache
