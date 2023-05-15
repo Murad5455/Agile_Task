@@ -8,134 +8,208 @@ namespace AgileTask
     {
         static void Main(string[] args)
         {
-            //New task:1
-            //Console.WriteLine("Iki reqemli eded girin");
-            //int Number = Convert.ToInt16(Console.ReadLine());
-            //int Sum = 0;
-            //while (Number<=100)
-            //{
-            //        Number += 7;
-            //    Sum = Number;
-            //}
-            //Console.WriteLine(Sum);
-
-            //new task:2
-            //int Number = int.Parse(Console.ReadLine());
-            //for (int i = 0; i < Number; i++)
-            //{
-            //    Console.WriteLine("I know how to use cycles");
-
-            //}
-            //new task:3
-
-            //for(int i=100; i<=1000;i++)
-            //   {
-            //       if(i%10==0)
-            //       { Console.WriteLine(i); }
-            //   }
-            //new task4:
-            //int Sum = 0;
-            //for (int i = 0; i < 100; i++)
-            //{
-            //    Sum += i;
-            //}
-            //Console.WriteLine(Sum);
-            //new task5:
-            // int Sum = 0;
-            // int Number = Convert.ToInt16(Console.ReadLine());
-            // for (int i = 100; i <=1000; i++)
-            // {
-            //     if (i % Number == 0)
-            //     {
-            //         Sum += i;
-            //         }
-
-            // }
-            //Console.WriteLine(Sum);
-
-            //new task:6
+            int Counter = 0;
 
 
-            //    Console.WriteLine("Sade ededleri tapan proqram");
-            //    Console.Write("Girilen eded: ");
-            //    int Number = Convert.ToInt16(Console.ReadLine());
+            string Answer1 = "A";
+            Console.WriteLine("1-ci sual");
+            Console.WriteLine("Formula 1-in yaranma tarixi\n A)1955 \n B)1958 \n C)1948 \n D)1980");
+            Console.WriteLine("Cavabinizi daxil edin");
 
-            //    for (int i = 0; i <= Number; i++)
-            //    {
+            string Input1 = Console.ReadLine();
+            if (Answer1 == Input1.ToUpper())
+            {
+                Console.WriteLine("Cavabiniz duzdur");
+                Counter++;
+            }
+            else { Console.WriteLine("Cavabiniz sehvdir"); }
 
-            //    if (i % 2 != 0 && i % 3 != 0 && i % 5 != 0 && i % 7 != 0)
+            string Answer2 = "B";
+            Console.WriteLine("2-ci sual");
+            Console.WriteLine("Formula 1-in yaranma tarixi\n A)1954 \n B)1953 \n C)1941 \n D)1988");
+            Console.WriteLine("Cavabinizi daxil edin");
 
-            //    {
-            //            Console.WriteLine(i);
-            //        Console.WriteLine("Bu sade edetdir");
-            //    }
-
-            //}
-            //New task: 7
-            //int Answer = 1;
-            //for (int i = 1; i <= 10; i++)
-            //{
-            //    Answer *= i;
-
-            //}
-            //Console.WriteLine("Cavab: "+ Answer);
-
-            //New task:8 mmm???
-
-            //string str = Console.ReadLine();
-            //Console.WriteLine(str.GetType());
-            //string NewStr = string.Join("", str.ToCharArray().Reverse());
-            //Console.WriteLine(NewStr);
-
-            //New task:9
-            //string text = Console.ReadLine();
-
-            //var a= text.IndexOf(".");
-            //Console.WriteLine(a);
-
-            //New task:10 alinmadi
-            //Console.WriteLine("Metin daxil edin");
+            string Input2 = Console.ReadLine();
+            if (Answer2 == Input2.ToUpper())
+            {
+                Console.WriteLine("Cavabiniz duzdur");
+                Counter++;
+            }
+            else { Console.WriteLine("Cavabiniz sehvdir"); }
 
 
+            string Answer3 = "C";
+            Console.WriteLine("3-ci sual");
+            Console.WriteLine("Formula 1-in yaranma tarixi\n A)1954 \n B)1953 \n C)1941 \n D)1988");
+            Console.WriteLine("Cavabinizi daxil edin");
 
+            string Input3 = Console.ReadLine();
+            if (Answer3 == Input3.ToUpper())
+            {
+                Console.WriteLine("Cavabiniz duzdur");
+                Counter++;
+            }
+            else { Console.WriteLine("Cavabiniz sehvdir"); }
 
-
-            ////New task:11 alinmadi
-            ////  int w = 0;
-            //int sayi = int.Parse(Console.ReadLine());
-            //for (int i = 1; i <= sayi; i++)
-            //    {
-            //    for (int j = -1; j < i; j++)
-            //    {
-            //        int w = i + j;
-
-
-            //        Console.WriteLine(w);
-
-            //    }
-            //    }
-
-            //Array task: 1
-            //string[] arr= new string[3];
-            //arr[0] = "Murad";
-            //arr[1] = "Imran";
-            //arr[2] = "Cavansir";
-            //arr[1] = "Classified";
-            //Console.WriteLine(arr[1]);
-
-            //Array task: 2
-
-            //int[] arr = new int[5];
-            //for (int i = 0; i < arr.Length; i++)
-            //{
-            //    arr[i] = int.Parse(Console.ReadLine());
-                
-            //}
-            //Console.WriteLine("En kicik eded"+arr.Min());
+            if (Counter == 3)
+            {
+                Console.WriteLine("Siz qalib oldunuz");
+            }
+            else { Console.WriteLine("Siz meglub oldunuz"); }
 
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//New task:1
+//Console.WriteLine("Iki reqemli eded girin");
+//int Number = Convert.ToInt16(Console.ReadLine());
+//int Sum = 0;
+//while (Number<=100)
+//{
+//        Number += 7;
+//    Sum = Number;
+//}
+//Console.WriteLine(Sum);
+
+//new task:2
+//int Number = int.Parse(Console.ReadLine());
+//for (int i = 0; i < Number; i++)
+//{
+//    Console.WriteLine("I know how to use cycles");
+
+//}
+//new task:3
+
+//for(int i=100; i<=1000;i++)
+//   {
+//       if(i%10==0)
+//       { Console.WriteLine(i); }
+//   }
+//new task4:
+//int Sum = 0;
+//for (int i = 0; i < 100; i++)
+//{
+//    Sum += i;
+//}
+//Console.WriteLine(Sum);
+//new task5:
+// int Sum = 0;
+// int Number = Convert.ToInt16(Console.ReadLine());
+// for (int i = 100; i <=1000; i++)
+// {
+//     if (i % Number == 0)
+//     {
+//         Sum += i;
+//         }
+
+// }
+//Console.WriteLine(Sum);
+
+//new task:6
+
+
+//    Console.WriteLine("Sade ededleri tapan proqram");
+//    Console.Write("Girilen eded: ");
+//    int Number = Convert.ToInt16(Console.ReadLine());
+
+//    for (int i = 0; i <= Number; i++)
+//    {
+
+//    if (i % 2 != 0 && i % 3 != 0 && i % 5 != 0 && i % 7 != 0)
+
+//    {
+//            Console.WriteLine(i);
+//        Console.WriteLine("Bu sade edetdir");
+//    }
+
+//}
+//New task: 7
+//int Answer = 1;
+//for (int i = 1; i <= 10; i++)
+//{
+//    Answer *= i;
+
+//}
+//Console.WriteLine("Cavab: "+ Answer);
+
+//New task:8 mmm???
+
+//string str = Console.ReadLine();
+//Console.WriteLine(str.GetType());
+//string NewStr = string.Join("", str.ToCharArray().Reverse());
+//Console.WriteLine(NewStr);
+
+//New task:9
+//string text = Console.ReadLine();
+
+//var a= text.IndexOf(".");
+//Console.WriteLine(a);
+
+//New task:10 alinmadi
+//Console.WriteLine("Metin daxil edin");
+
+
+
+
+
+////New task:11 alinmadi
+////  int w = 0;
+//int sayi = int.Parse(Console.ReadLine());
+//for (int i = 1; i <= sayi; i++)
+//    {
+//    for (int j = -1; j < i; j++)
+//    {
+//        int w = i + j;
+
+
+//        Console.WriteLine(w);
+
+//    }
+//    }
+
+//Array task: 1
+//string[] arr= new string[3];
+//arr[0] = "Murad";
+//arr[1] = "Imran";
+//arr[2] = "Cavansir";
+//arr[1] = "Classified";
+//Console.WriteLine(arr[1]);
+
+//Array task: 2
+
+//int[] arr = new int[5];
+//for (int i = 0; i < arr.Length; i++)
+//{
+//    arr[i] = int.Parse(Console.ReadLine());
+
+//}
+//Console.WriteLine("En kicik eded"+arr.Min());
+
 
 
 
