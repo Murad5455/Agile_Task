@@ -1,63 +1,307 @@
 ﻿using System;
+using System.Collections;
 using System.Linq;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace AgileTask
 
 {
     class Program
     {
+        //Task1
+        //static void logGreeting()
+        //{
+        //    Console.WriteLine("Murad is backend developer");
+        //}
+        //Task2
+        //static void User()
+        //{
+        //    for (int i = 0; i < 3; i++)
+        //    {
+
+
+        //        var Name = Console.ReadLine();
+        //        Console.WriteLine(Name + " is active now");
+        //    }
+        //}
+        //Task3
+        //static  void Largest()
+        // {
+        //     int Number1 = int.Parse(Console.ReadLine());
+        //     int Number2 = int.Parse(Console.ReadLine());
+        //     int Number3 = int.Parse(Console.ReadLine());
+
+        //     var sourceArray = new int[] { Number1, Number2, Number3 };
+        //     Console.WriteLine(  sourceArray.Max());
+        // }
+        //Task5
+        //static void Small()
+
+        // {
+        //     int Number1 = int.Parse(Console.ReadLine());
+        //     int Number2 = int.Parse(Console.ReadLine());
+        //     int Number3 = int.Parse(Console.ReadLine());
+
+        //     var sourceArray = new int[] { Number1, Number2, Number3 };
+        //     Console.WriteLine(sourceArray.Min());
+        // }
+        //Task6
+        //static void Calc()
+        //  {
+        //      int Number1 = int.Parse(Console.ReadLine());
+        //      int Number2 = int.Parse(Console.ReadLine());
+        //      Console.WriteLine("Bir emeliyyat novu secin");
+        //      Console.WriteLine(" 1)- \n 2)+ \n 3)* \n 4)/");
+        //      int Operation = Convert.ToInt32( Console.ReadLine());
+
+        //      switch (Operation)
+        //      {
+        //          case 1:
+
+        //              Console.WriteLine(Number1 - Number2);
+        //              break;     case 2:
+
+        //              Console.WriteLine(Number1 + Number2);
+        //              break;     case 3:
+
+        //              Console.WriteLine(Number1 * Number2);
+        //              break;     case 4:
+
+        //              Console.WriteLine(Number1 / Number2);
+        //              break;
+        //          default:
+        //              Number1 = 0;
+        //              Number2 = 0;
+        //              break;
+        //      }
+        //  }
+        //Task7
+        //static void isLucky()
+        //{
+        //    int Number = Convert.ToInt32(Console.ReadLine());
+        //    int Sum = (Number / 100000) + ((Number / 10000) % 10) + ((Number / 1000) % 10);
+        //    int Sum1 = ((Number / 100)%10) + ((Number / 10) % 10) + ((Number / 1) % 10);
+
+        //    Console.WriteLine(Sum);
+        //    Console.WriteLine(Sum1);
+        //    if (Sum > Sum1)
+        //    {
+        //        Console.WriteLine( true);
+        //    }
+        //    else Console.WriteLine(false);
+        //}
+
+        //Task8 Alinmadi
+        //static void Touuper()
+        //{
+        //    string Text = Console.ReadLine();
+        //   string[] arr = new string[] { Text };
+
+        //    foreach (var item in arr)
+        //    {
+
+        //        Console.WriteLine(item.Split(" ").First().ToUpper());
+        //    }
+        //}
+        //Task9
+        //static void TrueFalse()
+        // {
+        //     int Number = Convert.ToInt32(Console.ReadLine());
+        //     if (Number % 2 == 0)
+        //     {
+        //         Console.WriteLine(true);
+        //     }
+        //     else Console.WriteLine(false);
+        // }
+
+
+
+        //Task10
+        //static void Force()
+        //{
+        //    int a = 1;
+        //    int Number = Convert.ToInt32(Console.ReadLine());
+        //    for (int i = 0; i < 4; i++)
+        //    {
+        //        a *= Number;
+        //    }
+        //    Console.WriteLine(a);
+
+        //}
+        //Task11 alinmadi
+        //static void isvalidnumber()
+        //{
+        //    long Number = Convert.ToInt64(Console.ReadLine());
+
+        //    string[] arr = new string[] { Number.ToString() };
+        //    int a = +7;
+
+
+        //    if (arr.==2)
+        //    {
+        //        Console.WriteLine(true);
+
+        //    }
+        //    else { Console.WriteLine(false); }
+
+        //Task12
+
+        //static void numCounter()
+        //{
+        //    string text = Console.ReadLine();
+        //    Console.WriteLine(text.Count()) ;
+        //}
+
+        //Task22
+
+        //static void numCounter()
+        //{
+
+        //    int[] arr =  { 45,-7,89,-6 };
+
+        //    foreach (var item in arr)
+        //    {
+        //        if (item < 0)
+        //        {
+
+        //            Console.WriteLine("Menfi ededler " +item);
+        //        }
+
+        //    }
+
+        //}
+
+
+        //Task23
+        //static void Counter()
+        //{
+
+        //    int[] arr = { 45, -7, 89, -6 };
+
+        //    foreach (var item in arr)
+        //    {
+        //        if (item > 0)
+        //        {
+
+        //            Console.WriteLine("Musbet ededler " + item);
+        //        }
+
+        //    }
+
+        //}
+        //Task24
+
+        //static void callback()
+        //{
+        //    string[] arr =new string[] {"Michael","Trevor","Franklin","Lamar","Jimmy" };
+
+          
+
+        //        foreach (var item in arr)
+        //    {
+        //        Console.WriteLine("_ _ _ _ _\n ");
+
+        //            Console.WriteLine(item);
+        //        Console.WriteLine("_ _ _ _ _ ");
+        //    }
+
+        //    foreach (var item in arr)
+        //    {
+               
+
+        //        Console.WriteLine("<3<3<3<3 "+item+ " <3<3<3<3 ");
+               
+        //    }
+        //    foreach (var item in arr)
+        //    {
+        //        for (int i = 0; i < item.Length-5; i++)
+        //        {
+        //            Console.WriteLine(i+" - "+ item);
+        //        }
+
+                
+
+        //    }
+
+        //}
+        //Task25
+
+        static void ToUpper()
+        {
+            string Text = Console.ReadLine();
+            Console.WriteLine(Text.ToUpper());
+        }
+
+
+
+
+
+
+
+
         static void Main(string[] args)
         {
-            int Counter = 0;
 
 
-            string Answer1 = "A";
-            Console.WriteLine("1-ci sual");
-            Console.WriteLine("Formula 1-in yaranma tarixi\n A)1955 \n B)1958 \n C)1948 \n D)1980");
-            Console.WriteLine("Cavabinizi daxil edin");
-
-            string Input1 = Console.ReadLine();
-            if (Answer1 == Input1.ToUpper())
-            {
-                Console.WriteLine("Cavabiniz duzdur");
-                Counter++;
-            }
-            else { Console.WriteLine("Cavabiniz sehvdir"); }
-
-            string Answer2 = "B";
-            Console.WriteLine("2-ci sual");
-            Console.WriteLine("Formula 1-in yaranma tarixi\n A)1954 \n B)1953 \n C)1941 \n D)1988");
-            Console.WriteLine("Cavabinizi daxil edin");
-
-            string Input2 = Console.ReadLine();
-            if (Answer2 == Input2.ToUpper())
-            {
-                Console.WriteLine("Cavabiniz duzdur");
-                Counter++;
-            }
-            else { Console.WriteLine("Cavabiniz sehvdir"); }
+            ToUpper();
 
 
-            string Answer3 = "C";
-            Console.WriteLine("3-ci sual");
-            Console.WriteLine("Formula 1-in yaranma tarixi\n A)1954 \n B)1953 \n C)1941 \n D)1988");
-            Console.WriteLine("Cavabinizi daxil edin");
 
-            string Input3 = Console.ReadLine();
-            if (Answer3 == Input3.ToUpper())
-            {
-                Console.WriteLine("Cavabiniz duzdur");
-                Counter++;
-            }
-            else { Console.WriteLine("Cavabiniz sehvdir"); }
 
-            if (Counter == 3)
-            {
-                Console.WriteLine("Siz qalib oldunuz");
-            }
-            else { Console.WriteLine("Siz meglub oldunuz"); }
+            //Task4
+            //int Counter = 0;
+            //string Answer1 = "A";
+            //Console.WriteLine("1-ci sual");
+            //Console.WriteLine("Formula 1-in yaranma tarixi\n A)1955 \n B)1958 \n C)1948 \n D)1980");
+            //Console.WriteLine("Cavabinizi daxil edin");
+
+            //string Input1 = Console.ReadLine();
+            //if (Answer1 == Input1.ToUpper())
+            //{
+            //    Console.WriteLine("Cavabiniz duzdur");
+            //    Counter++;
+            //}
+            //else { Console.WriteLine("Cavabiniz sehvdir"); }
+
+            //string Answer2 = "B";
+            //Console.WriteLine("2-ci sual");
+            //Console.WriteLine("Formula 1-in yaranma tarixi\n A)1954 \n B)1953 \n C)1941 \n D)1988");
+            //Console.WriteLine("Cavabinizi daxil edin");
+
+            //string Input2 = Console.ReadLine();
+            //if (Answer2 == Input2.ToUpper())
+            //{
+            //    Console.WriteLine("Cavabiniz duzdur");
+            //    Counter++;
+            //}
+            //else { Console.WriteLine("Cavabiniz sehvdir"); }
+
+
+            //string Answer3 = "C";
+            //Console.WriteLine("3-ci sual");
+            //Console.WriteLine("Formula 1-in yaranma tarixi\n A)1954 \n B)1953 \n C)1941 \n D)1988");
+            //Console.WriteLine("Cavabinizi daxil edin");
+
+            //string Input3 = Console.ReadLine();
+            //if (Answer3 == Input3.ToUpper())
+            //{
+            //    Console.WriteLine("Cavabiniz duzdur");
+            //    Counter++;
+            //}
+            //else { Console.WriteLine("Cavabiniz sehvdir"); }
+
+            //if (Counter == 3)
+            //{
+            //    Console.WriteLine("Siz qalib oldunuz");
+            //}
+            //else { Console.WriteLine("Siz meglub oldunuz"); }
+
+
+
 
         }
+
+
     }
 }
 
