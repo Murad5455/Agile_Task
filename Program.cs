@@ -6,62 +6,251 @@ using static System.Net.Mime.MediaTypeNames;
 namespace AgileTask
 
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            //Oop Task1:
+
+            //            Muellim modeli yaradin, id, adi,soyadi,vezifesi,dogum tarixi, ise baslama tarixi, islediyi yer
+            //  datalarini saxlasin.
+            //  Id: sadece oxuna biler auto yaradilacaq.
+            //  Vezife: daxil edilmeyibse nulldursa Teacher deye set edilsin.
+            //Ise Baslama tarixi: Muellimin eger 23 yasi varsa muellim olaraq fealiyyet gostere biler.
+
+            //            ArrayList db =new ArrayList();
+
+            //            var Th = new Teacher();
+            //            var Th1 = new Teacher();
 
 
-            //Metod ile kalkulyatir
+            //            db.Add(Th);
+            //            Th.Name = "Murad";
+            //            Th.SureName = "Qelenderli";
+            //            Th.DateOfBirth =1990 ;
+            //            db.Add(Th1);
+            //            Th1.Name = "Fuad";
+            //            Th1.SureName = "Orucov";
 
-            Console.WriteLine("Birci ededi girin");
-            int Number1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Ikinci eded girin");
-            int Number2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Emeliyyatlardan birini secin  -  +  *  +");
 
-            string result = Console.ReadLine();
 
-            switch (result)
+            //            foreach (var item in db)
+            //            {
+            //                Teacher teacher = (Teacher)item;
+            //                Console.WriteLine("Idsi "+teacher.ID);
+            //                Console.WriteLine("Adi "+teacher.Name);
+            //                Console.WriteLine("Yasi "+teacher.DateOfBirth);
+            //                Console.WriteLine("Soyadi "+teacher.SureName);
+
+            //            }
+
+            //        }
+
+            //    }
+            //    public class Teacher
+            //    {
+            //       public int Age;
+
+            //        private static int a = 0;
+            //        public int ID { get; private set; }
+            //        public Teacher()
+            //        {
+            //            ID = ++a;
+            //        }
+
+            //        public string Name { get; set; }
+            //        public string SureName { get; set; }
+
+
+            //        public int DateOfBirth
+            //        {
+            //            get
+            //            {
+
+            //                return Age; }
+            //            set
+            //            {
+            //                int Year = 2023;
+            //                Age = Year - value;
+            //                if (Age > 23)
+            //                { Console.WriteLine("Siz muellim ola bilersiniz"); }
+            //                else
+            //                { Console.WriteLine("Siz muellim ola bilmersiniz"); }
+
+            //            }
+            //        }
+
+            //        public string Position { get; set; }
+            //        public int TimeStartWork { get; set; }
+            //        public string Workplace { get; set; }
+            //    }
+
+            //}
+
+            //Oop Task2
+            //Rubl və dollarla hesab qəbul edən və bütün hesablardakı məbləğin cəmin rublla göstərən funksiya yazın.
+
+
+
+            //    Console.WriteLine(Hesap(2,10));
+            //}
+            //public static double Hesap(double Dollar, double Ruble)
+            //{
+            //    double Convert = (Dollar * 100)  * 0.8017;
+            //    return Ruble + Convert;
+
+
+            //Opp Task3
+            //            .Kim milyonçu olmaq istəyir» oyununu tərtib edin.
+            //İstifadəçiyə hər hansı bir mövzuda 4 cavabdan birini seçməli üç sual verin.
+            //Bütün sualların cavabı düzgündürsə, "Siz qalib gəldiniz", suala səhv cavab olduqda -"Siz məğlub oldunuz" xəbərdarlığı göstərin.                          
+
+            //int Counter = 0;
+            //string Answer1 = "A";
+            //Console.WriteLine("1-ci sual");
+            //Console.WriteLine("Formula 1-in yaranma tarixi\n A)1955 \n B)1958 \n C)1948 \n D)1980");
+            //Console.WriteLine("Cavabinizi daxil edin");
+
+            //string Input1 = Console.ReadLine();
+            //if (Answer1 == Input1.ToUpper())
+            //{
+            //    Console.WriteLine("Cavabiniz duzdur");
+            //    Counter++;
+            //}
+            //else { Console.WriteLine("Cavabiniz sehvdir"); }
+
+            //string Answer2 = "B";
+            //Console.WriteLine("2-ci sual");
+            //Console.WriteLine("Formula 1-in yaranma tarixi\n A)1954 \n B)1953 \n C)1941 \n D)1988");
+            //Console.WriteLine("Cavabinizi daxil edin");
+
+            //string Input2 = Console.ReadLine();
+            //if (Answer2 == Input2.ToUpper())
+            //{
+            //    Console.WriteLine("Cavabiniz duzdur");
+            //    Counter++;
+            //}
+            //else { Console.WriteLine("Cavabiniz sehvdir"); }
+
+
+            //string Answer3 = "C";
+            //Console.WriteLine("3-cu sual");
+            //Console.WriteLine("Formula 1-in yaranma tarixi\n A)1954 \n B)1953 \n C)1941 \n D)1988");
+            //Console.WriteLine("Cavabinizi daxil edin");
+
+            //string Input3 = Console.ReadLine();
+            //if (Answer3 == Input3.ToUpper())
+            //{
+            //    Console.WriteLine("Cavabiniz duzdur");
+            //    Counter++;
+            //}
+            //else { Console.WriteLine("Cavabiniz sehvdir"); }
+
+            //if (Counter == 3)
+            //{
+            //    Console.WriteLine("Siz qalib oldunuz");
+            //}
+            //else { Console.WriteLine("Siz meglub oldunuz"); }
+
+            //Oop Task4
+            //            Klaviaturadan 1 - dən 99 - da daxil olmaqla daxil edilmiş ədədi mətnlə ​​yazan funksiya tərtib edin.
+            //İstifadəçidən 1 ilə 99 arasında rəqəm daxil etməsini tələb edən və onu mətn şəklində konsola çıxaran numberToText funksiyası tərtib edin.
+
+            Console.WriteLine("1 ile 99 arasında bir reqem daxil edin:");
+            int input = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(NumberToText(input));
+
+        }
+
+        static string NumberToText(int number)
+        {
+            
+            if (number < 0 && number < 100)
             {
-                case "-":
-                    Console.WriteLine(cixma(Number1, Number2));
-                    break;
-                case "+":
-                    Console.WriteLine(Toplam(Number1, Number2));
-                    break;
-                case "*":
-                    Console.WriteLine(Vurma(Number1, Number2));
-                    break;
-                case "/":
-                    Console.WriteLine(Bolme(Number1, Number2));
-                    break;
-
             }
-        }
+
+
+                string[] onesPlace = { "", "bir", "iki", "üç", "dörd", "beş", "altı", "yeddi", "səkkiz", "doqquz", };
+                string[] tensPlace = { "", "on", "iyirmi", "otuz", "qırx", "əlli", "altmış", "yetmiş", "səksən", "doxsan" };
 
 
 
-        public static int cixma(int Number1, int Number2)
-        {
-            return Number1 - Number2;
+                int onesDigit = number % 10;
+                int tensDigit = number / 10;
+
+                return tensPlace[tensDigit] + " " + onesPlace[onesDigit];
+            }
+
         }
-        public static int Toplam(int Number1, int Number2)
-        {
-            return Number1 + Number2;
-        }
-        public static int Vurma(int Number1, int Number2)
-        {
-            return Number1 * Number2;
-        }
-        public static int Bolme(int Number1, int Number2)
-        {
-            return Number1 / Number2;
-        }
+    
+  
 
 
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Metod ile kalkulyatir
+
+//    Console.WriteLine("Birci ededi girin");
+//    int Number1 = Convert.ToInt32(Console.ReadLine());
+//    Console.WriteLine("Ikinci eded girin");
+//    int Number2 = Convert.ToInt32(Console.ReadLine());
+//    Console.WriteLine("Emeliyyatlardan birini secin  -  +  *  +");
+
+//    string result = Console.ReadLine();
+
+//    switch (result)
+//    {
+//        case "-":
+//            Console.WriteLine(cixma(Number1, Number2));
+//            break;
+//        case "+":
+//            Console.WriteLine(Toplam(Number1, Number2));
+//            break;
+//        case "*":
+//            Console.WriteLine(Vurma(Number1, Number2));
+//            break;
+//        case "/":
+//            Console.WriteLine(Bolme(Number1, Number2));
+//            break;
+
+//    }
+//}
+
+
+
+//public static int cixma(int Number1, int Number2)
+//{
+//    return Number1 - Number2;
+//}
+//public static int Toplam(int Number1, int Number2)
+//{
+//    return Number1 + Number2;
+//}
+//public static int Vurma(int Number1, int Number2)
+//{
+//    return Number1 * Number2;
+//}
+//public static int Bolme(int Number1, int Number2)
+//{
+//    return Number1 / Number2;
 
 
 
@@ -297,63 +486,63 @@ namespace AgileTask
 
 
 
-          
 
 
 
 
-            //Task4
-            //int Counter = 0;
-            //string Answer1 = "A";
-            //Console.WriteLine("1-ci sual");
-            //Console.WriteLine("Formula 1-in yaranma tarixi\n A)1955 \n B)1958 \n C)1948 \n D)1980");
-            //Console.WriteLine("Cavabinizi daxil edin");
 
-            //string Input1 = Console.ReadLine();
-            //if (Answer1 == Input1.ToUpper())
-            //{
-            //    Console.WriteLine("Cavabiniz duzdur");
-            //    Counter++;
-            //}
-            //else { Console.WriteLine("Cavabiniz sehvdir"); }
+//Task4
+//int Counter = 0;
+//string Answer1 = "A";
+//Console.WriteLine("1-ci sual");
+//Console.WriteLine("Formula 1-in yaranma tarixi\n A)1955 \n B)1958 \n C)1948 \n D)1980");
+//Console.WriteLine("Cavabinizi daxil edin");
 
-            //string Answer2 = "B";
-            //Console.WriteLine("2-ci sual");
-            //Console.WriteLine("Formula 1-in yaranma tarixi\n A)1954 \n B)1953 \n C)1941 \n D)1988");
-            //Console.WriteLine("Cavabinizi daxil edin");
+//string Input1 = Console.ReadLine();
+//if (Answer1 == Input1.ToUpper())
+//{
+//    Console.WriteLine("Cavabiniz duzdur");
+//    Counter++;
+//}
+//else { Console.WriteLine("Cavabiniz sehvdir"); }
 
-            //string Input2 = Console.ReadLine();
-            //if (Answer2 == Input2.ToUpper())
-            //{
-            //    Console.WriteLine("Cavabiniz duzdur");
-            //    Counter++;
-            //}
-            //else { Console.WriteLine("Cavabiniz sehvdir"); }
+//string Answer2 = "B";
+//Console.WriteLine("2-ci sual");
+//Console.WriteLine("Formula 1-in yaranma tarixi\n A)1954 \n B)1953 \n C)1941 \n D)1988");
+//Console.WriteLine("Cavabinizi daxil edin");
 
-
-            //string Answer3 = "C";
-            //Console.WriteLine("3-ci sual");
-            //Console.WriteLine("Formula 1-in yaranma tarixi\n A)1954 \n B)1953 \n C)1941 \n D)1988");
-            //Console.WriteLine("Cavabinizi daxil edin");
-
-            //string Input3 = Console.ReadLine();
-            //if (Answer3 == Input3.ToUpper())
-            //{
-            //    Console.WriteLine("Cavabiniz duzdur");
-            //    Counter++;
-            //}
-            //else { Console.WriteLine("Cavabiniz sehvdir"); }
-
-            //if (Counter == 3)
-            //{
-            //    Console.WriteLine("Siz qalib oldunuz");
-            //}
-            //else { Console.WriteLine("Siz meglub oldunuz"); }
+//string Input2 = Console.ReadLine();
+//if (Answer2 == Input2.ToUpper())
+//{
+//    Console.WriteLine("Cavabiniz duzdur");
+//    Counter++;
+//}
+//else { Console.WriteLine("Cavabiniz sehvdir"); }
 
 
+//string Answer3 = "C";
+//Console.WriteLine("3-ci sual");
+//Console.WriteLine("Formula 1-in yaranma tarixi\n A)1954 \n B)1953 \n C)1941 \n D)1988");
+//Console.WriteLine("Cavabinizi daxil edin");
+
+//string Input3 = Console.ReadLine();
+//if (Answer3 == Input3.ToUpper())
+//{
+//    Console.WriteLine("Cavabiniz duzdur");
+//    Counter++;
+//}
+//else { Console.WriteLine("Cavabiniz sehvdir"); }
+
+//if (Counter == 3)
+//{
+//    Console.WriteLine("Siz qalib oldunuz");
+//}
+//else { Console.WriteLine("Siz meglub oldunuz"); }
 
 
- 
+
+
+
 
 
 
@@ -654,20 +843,6 @@ namespace AgileTask
 
 
 //    Console.WriteLine(def+"aa");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //switch ()
 //{

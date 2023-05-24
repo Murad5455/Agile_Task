@@ -7,10 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "AgileTask/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.5"
+        },
         "runtime": {
           "AgileTask.dll": {}
         }
-      }
+      },
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.5": {}
     }
   },
   "libraries": {
@@ -18,6 +22,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.EntityFrameworkCore.Analyzers/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yMLM/aK1MikVqpjxd7PJ1Pjgztd3VAd26ZHxyjxG3RPeM9cHjvS5tCg9kAAayR6eHmBg0ffZsHdT28WfA5tTlA==",
+      "path": "microsoft.entityframeworkcore.analyzers/7.0.5",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512"
     }
   }
 }

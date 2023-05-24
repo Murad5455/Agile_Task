@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZXI9oW0jcrnPB6pKYG4AUCn1QuAt7EpgNNw9s6f+ylqGCZM9ET+Wd6oY3B671hKQaQ8O6iCN7y/Tb08dk30RkA==",
+  "dgSpecHash": "Sxm7ePovOCb6Xh7sEVEpu6WvO6aSRJmS4a1v6aX474AozchnivbLm6QzeSHItXJ/Of3F3mx4pfnzz6aMxRpYIA==",
   "success": true,
   "projectFilePath": "C:\\Users\\LENOVO\\source\\repos\\AgileTask\\AgileTask\\AgileTask.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512"
+  ],
   "logs": []
 }
