@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -8,121 +9,151 @@ namespace AgileTask
 {
     public class Program
     {
+   
+        static List<int> FibonacciSeries(int count)
+        {
+            List<int> series = new List<int>();
+
+            if (count >= 1)
+                series.Add(0);
+
+            if (count >= 2)
+                series.Add(1);
+
+            FibonacciHelper(series, count - 2); 
+
+            return series;
+        }
+
+        static void FibonacciHelper(List<int> series, int remainingCount)
+        {
+            if (remainingCount <= 0)
+                return;
+
+            int n = series.Count;
+            int next = series[n - 1] + series[n - 2];
+            series.Add(next);
+
+            FibonacciHelper(series, remainingCount - 1);
+        }
+
         static void Main(string[] args)
         {
-            Program program = new Program();
-            Console.WriteLine("Bir eded daxil edin");
-            int input = int.Parse(Console.ReadLine());
-           
-            Console.WriteLine("Emeliyyatlardan birini secin \n-\n+\n*\n/");
-            string Operation = Console.ReadLine();
+            Console.Write("Ekrana nece eded ardicil fibonacci ededi cixarilsin?: ");
+            int count = int.Parse(Console.ReadLine());
 
-            int a=0;
-            switch (Operation)
+            List<int> fibonacciSeries = FibonacciSeries(count);
+
+            Console.WriteLine("Fibonacci arreyi:");
+            foreach (int num in fibonacciSeries)
             {
-                case "-":
-                    a = program.minus(input);
-                
-                    break;
-                case "+":
-
-                   a= program.plus(input);
-
-                    break;
-                case "*":
-
-                    a=program.mult(input);
-                    break;
-                case "/":
-
-                    a = program.divide(input);
-                    break;
-                   
+                Console.Write(num + " ");
             }
-
-            Console.WriteLine(a);
-            Console.WriteLine(program.DecimalToBinary(a));
-            //string sayi = Convert.ToString(program.DecimalToBinary(a));
-            Console.WriteLine(program.NumberToText(a));
-           
         }
-        int p;
-        public Program()
-        {
-
-            p = 15;
-
-        }
-        public int plus(int b)
-        {
-
-
-            return p + b;
-        }
-        public int minus(int b)
-        {
-            int a = p - b;
-            return a;
-        }
-        public int mult( int b)
-        {
-
-            return p * b;
-        }
-        public int divide( int b)
-        {
-
-            return p / b;
-        }
-
-        string l ="";
-
-        public string DecimalToBinary(int decimalSayi)
-        {
-            string binarySayi = "";
-
-            while (decimalSayi > 0)
-            {
-                int rest = decimalSayi % 2;
-                binarySayi = rest.ToString() + binarySayi;
-                decimalSayi = decimalSayi / 2;
-            }
-
-            l = binarySayi;
-
-            return l;
-        }
-        
-        public string NumberToText(int number)
-        {
-
-            string[] onesPlace = { "", "bir", "iki", "üç", "dörd", "beş", "altı", "yeddi", "sekkiz", "doqquz", };
-            string[] tensPlace = { "", "on", "iyirmi", "otuz", "qırx", "elli", "altmış", "yetmiş", "səksən", "doxsan" };
-
-            int onesDigit = number % 10;
-            int tensDigit = number / 10;
-
-            return tensPlace[tensDigit] + " " + onesPlace[onesDigit] ;
-        }
-
-
-
-
-
-
-
-
     }
+
 }
 
 
+//    }
+//}
+//            Program program = new Program();
+//            Console.WriteLine("Bir eded daxil edin");
+//            int input = int.Parse(Console.ReadLine());
+
+//            Console.WriteLine("Emeliyyatlardan birini secin \n-\n+\n*\n/");
+//            string Operation = Console.ReadLine();
+
+//            int a=0;
+//            switch (Operation)
+//            {
+//                case "-":
+//                    a = program.minus(input);
+
+//                    break;
+//                case "+":
+
+//                   a= program.plus(input);
+
+//                    break;
+//                case "*":
+
+//                    a=program.mult(input);
+//                    break;
+//                case "/":
+
+//                    a = program.divide(input);
+//                    break;
+
+//            }
+
+//            Console.WriteLine(a);
+//            Console.WriteLine(program.DecimalToBinary(a));
+//            //string sayi = Convert.ToString(program.DecimalToBinary(a));
+//            Console.WriteLine(program.NumberToText(a));
+
+//        }
+//        int p;
+//        public Program()
+//        {
+
+//            p = 15;
+
+//        }
+//        public int plus(int b)
+//        {
 
 
+//            return p + b;
+//        }
+//        public int minus(int b)
+//        {
+//            int a = p - b;
+//            return a;
+//        }
+//        public int mult( int b)
+//        {
 
+//            return p * b;
+//        }
+//        public int divide( int b)
+//        {
 
+//            return p / b;
+//        }
 
+//        string l ="";
 
+//        public string DecimalToBinary(int decimalSayi)
+//        {
+//            string binarySayi = "";
 
+//            while (decimalSayi > 0)
+//            {
+//                int rest = decimalSayi % 2;
+//                binarySayi = rest.ToString() + binarySayi;
+//                decimalSayi = decimalSayi / 2;
+//            }
+
+//            l = binarySayi;
+
+//            return l;
+//        }
+
+//        public string NumberToText(int number)
+//        {
+
+//            string[] onesPlace = { "", "bir", "iki", "üç", "dörd", "beş", "altı", "yeddi", "sekkiz", "doqquz", };
+//            string[] tensPlace = { "", "on", "iyirmi", "otuz", "qırx", "elli", "altmış", "yetmiş", "səksən", "doxsan" };
+
+//            int onesDigit = number % 10;
+//            int tensDigit = number / 10;
+
+//            return tensPlace[tensDigit] + " " + onesPlace[onesDigit] ;
+//        }
+
+//    }
+//}
 
 
 //Oop Task1:
